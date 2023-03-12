@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0e0e0;
+    font-family: arial ;
+    height: 200vh;
+}
+.container {
+    width: 100%;
+    height: 58px;
+}
+.container > .header   {
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    justify-content: space-between;
+    padding: 0px 100px;
+    position: fixed;
+    width: 100%;
+}
+.container > .header > .logo > a{
+    font-size: 36px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-weight: bold;
+    padding: 8px 0px;
+
+}
+.container > .header  > .navbar > ul {
+    display: flex;
+    list-style-type: none;
+}
+.container > .header > .navbar > ul >li> a{
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    transition: 0.1s;
+}
+.container > .header > .navbar > ul >li> a:hover {
+    color: green;
+}
+.menu{
+    margin-top: 150px;
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+}
+.menu .card img{
+    width: 250px;
+    height: 300px;
+}
+.card{
+    height: 300px;
+    box-shadow: 5px 5px 10px black;
+    margin: 25px;
+    overflow: hidden;
+}
+.card .detail{
+    /* height: 150px; */
+    height: 50px;
+    width: 250px;
+    padding: 3x;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27, 27, 27,.5);
+    color: aliceblue;
+    bottom: 124px;
+    
+}
+.card .detail h1{
+    margin-left: 5px;
+
+}
+.card .detail p{
+    visibility: hidden;
+    opacity: 0;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .detail{
+    height: 150px;
+    bottom: 124px;
+    
+}
+.card:hover .detail p{
+    opacity: 1;
+    visibility: visible;
+    margin-left: 5px;
+}
